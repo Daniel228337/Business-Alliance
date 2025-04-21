@@ -1,0 +1,69 @@
+@import url(./gird.css);
+
+:root {
+    --color-yellow: #FEB113;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-text: #001A49; 
+    --color-headers: #00155F;
+    --color-grey: #F1F2F9;
+}
+
+/* *_______________MAIN STYLES_______________* */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Circe', serif;
+  font-weight: 400;
+  color: var(--color-black);
+  font-size: 17px;
+  line-height: 1.41;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.1;
+  color: var(--color-white);
+}
+
+h2 {
+  line-height: 1.36;
+  margin: 0;
+  font-weight: 700;
+  font-size: 37px;
+  color: var(--color-headers);
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
