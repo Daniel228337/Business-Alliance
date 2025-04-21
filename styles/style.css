@@ -1,12 +1,8 @@
 @import url(./gird.css);
+@import url(./font.css);
 
 :root {
-    --color-yellow: #FEB113;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-text: #001A49; 
-    --color-headers: #00155F;
-    --color-grey: #F1F2F9;
+    --color-green:#21a038;
 }
 
 /* *_______________MAIN STYLES_______________* */
@@ -34,8 +30,8 @@ body {
 h1 {
   margin: 0;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 1.1;
+  font-size: 50px;
+  line-height: 1.2;
   color: var(--color-white);
 }
 
@@ -66,4 +62,15 @@ p {
 a {
   text-decoration: none;
   color: black;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.btn-green {
+  color: var(--color-green)
 }
