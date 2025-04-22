@@ -3,6 +3,7 @@
 
 :root {
     --color-green:#21a038;
+    --color-black: #000000;
 }
 
 /* *_______________MAIN STYLES_______________* */
@@ -20,19 +21,18 @@ ul, li {
 
 body {
   margin: 0;
-  font-family: 'Circe', serif;
+  font-family: 'Gilroy', serif;
   font-weight: 400;
   color: var(--color-black);
   font-size: 17px;
-  line-height: 1.41;
+  line-height: 1.4;
 }
 
 h1 {
   margin: 0;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 50px;
   line-height: 1.2;
-  color: var(--color-white);
 }
 
 h2 {
@@ -40,7 +40,6 @@ h2 {
   margin: 0;
   font-weight: 700;
   font-size: 37px;
-  color: var(--color-headers);
 }
 
 h3 {
@@ -65,12 +64,75 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1232px;
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
 }
 
+.btn {
+  border: 1px solid var(--color-green);
+  color: var(--color-black);
+  cursor: pointer;
+}
+
 .btn-green {
   color: var(--color-green)
+}
+
+/* *_______________header_______________* */
+.header {
+  padding-top: 32px;
+  position: relative;
+}
+
+.header .container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.header-call_number {
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header nav {
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+  margin-right: 99px;
+}
+
+.header_logo {
+  position: absolute;
+  left: 10%;
+  top: 12px;
+}
+
+.header_btn {
+  position: absolute;
+  right: 10%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 46px; 
+  border-radius: 6px;
+  background: none;
+}
+
+/* *_______________welcome_______________* */
+
+.welcome_title {
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 500;
+  max-width: 771px;
+  margin-bottom: 40px;
+}
+
+.welcome_title span {
+  color: var(--color-green);
 }
