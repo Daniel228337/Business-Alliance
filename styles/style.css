@@ -4,6 +4,7 @@
 :root {
     --color-green:#21a038;
     --color-black: #000000;
+    --color-white: #ffffff;
 }
 
 /* *_______________MAIN STYLES_______________* */
@@ -73,11 +74,18 @@ a {
 .btn {
   border: 1px solid var(--color-green);
   color: var(--color-black);
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .btn-green {
-  color: var(--color-green)
+  color: var(--color-white);
+  background: var(--color-green);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 /* *_______________header_______________* */
@@ -90,6 +98,7 @@ a {
   display: flex;
   text-align: center;
   align-items: center;
+  position: relative;
 }
 
 .header-call_number {
@@ -109,21 +118,38 @@ a {
 
 .header_logo {
   position: absolute;
-  left: 10%;
-  top: 12px;
+  left: -138px;
+  top: -25px;
 }
 
 .header_btn {
   position: absolute;
-  right: 10%;
+  right: -140px;
   font-size: 16px;
   font-weight: 600;
   padding: 20px 46px; 
-  border-radius: 6px;
   background: none;
 }
 
 /* *_______________welcome_______________* */
+.welcome {
+  /* padding-top: 152px; */
+  /* padding-bottom: 120px; */
+}
+
+.welcome .container {
+  background-repeat: no-repeat;
+  background-image: url(../img/welcome_img-1.png);
+  background-position: calc(100% - 26px) calc(50% + 50px);
+  overflow: hidden;
+  padding-top: 152px;
+  padding-bottom: 206px;
+}
+
+.welcome .container-two {
+  background-image: url(../img/welcome_img-2.png);
+  background-position: calc(100% - 811px) calc(50% + 50px);
+}
 
 .welcome_title {
   font-size: 50px;
@@ -135,4 +161,70 @@ a {
 
 .welcome_title span {
   color: var(--color-green);
+}
+
+.welcome_text {
+  position: relative;
+  max-width: 291px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-left: 32px;
+}
+
+.welcome_text::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 57px;
+  background: var(--color-green);
+  transform: translateX(-32px);
+}
+
+.welcome_btn {
+  margin-top: 60px;
+  padding: 23px 61px;
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom, #FBFFF9, #E0F2DC);
+}
+
+/* *_______________welcome-2_______________* */
+.welcome .two {
+  justify-content: end;
+}
+
+.welcome_title-two {
+  max-width: 771px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.welcome_text-two {
+  position: relative;
+  max-width: 648px;
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: 92px;
+}
+
+.welcome_text-two::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 155px;
+  background: var(--color-green);
+  transform: translateX(-31px) translateY(9px);
+}
+
+.welcome_btn-two {
+  display: block;
+  margin-left: auto;
+  margin-right: 527px;
 }

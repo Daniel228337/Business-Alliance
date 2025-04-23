@@ -1,0 +1,105 @@
+/* Контейнер слайдера */
+.slick-slider {}
+
+/* Обертка, скрывающая лишние части слайдов */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента со слайдами */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Отдельный слайд */
+.slick-slide {}
+
+/* Текущий активный слайд */
+.slick-current {}
+
+/* Видимые слайды */
+.slick-active {}
+
+/* Центральный слайд при centerMode: true */
+.slick-center {}
+
+/* Кнопка "назад" */
+.slick-prev {}
+
+/* Кнопка "вперед" */
+.slick-next {}
+
+/* Неактивная кнопка "назад" */
+.slick-prev.slick-disabled {}
+
+/* Неактивная кнопка "вперед" */
+.slick-next.slick-disabled {}
+
+/* Контейнер с точками */
+.slick-dots {}
+
+/* Отдельная точка */
+.slick-dots li {}
+
+/* Кнопка внутри точки */
+.slick-dots li button {}
+
+/* Активная точка */
+.slick-dots li.slick-active button {}
+
+/* Когда слайдер загружен */
+.slick-initialized {}
+
+/* Когда идет загрузка */
+.slick-loading {}
+
+/* Вертикальный режим */
+.slick-vertical {}
+
+/* Дублированные слайды (для бесконечной прокрутки) */
+.slick-slide.slick-cloned {}
+
+
+
+/* Слайдер */
+.slider {
+    position: relative;
+    min-width: 0;
+    padding: 0 50px;
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* top: 81%; или любое значение */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    z-index: 10;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.slider .slick-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--color-green);
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    opacity: 0.3;
+}
+
+.slider .slick-dots li.slick-active button {
+    opacity: 100%;
+}
+
+
+
+
