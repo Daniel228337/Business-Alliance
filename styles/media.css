@@ -17,3 +17,7 @@
 .margin {
     margin: auto;
 }
+
+.end {
+    justify-content: end;
+}
