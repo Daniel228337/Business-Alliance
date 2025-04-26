@@ -205,6 +205,7 @@ a {
   overflow: hidden;
   padding-top: 152px;
   padding-bottom: 206px;
+  max-height: 755px;
 }
 
 .welcome .container-two {
@@ -248,7 +249,12 @@ a {
 }
 
 .gradient-bg {
-  background: linear-gradient(to bottom, #fbfff9, #e0f2dc);
+  background: 
+    url(../img/welcome_bg.svg) no-repeat 25% top, 
+    url(../img/welcome_bg-2.svg) no-repeat 70% 80%,  
+    linear-gradient(to bottom, #fbfff9, #e0f2dc);  
+  background-size: auto, auto, 100%;  
+  background-position: 25% top, 70% 80%; 
 }
 
 /* *_______________welcome-2_______________* */
@@ -458,7 +464,7 @@ a {
   border-radius: 6px;
   padding: 20px 20px 20px 70px;
   outline: none;
-  line-height: 1.7;
+  line-height: 1;
   width: 100%;
 }
 
@@ -470,6 +476,12 @@ a {
   color: var(--color-green);
   opacity: 100%;
 }
+
+.input-wrapper:focus-within svg {
+  color: var(--color-green);
+  opacity: 1;
+}
+
 
 .call-form_right button {
   padding: 23px 99px;
@@ -838,6 +850,9 @@ a {
   font-size: 22px;
   color: var(--color-green);
   padding: 29px 35px 29px 99px;
+  background-image: url(../img/request-form_ellipse.png); 
+  background-repeat: no-repeat; 
+  background-position: 26px center; 
 }
 
 .stepForm_one:focus {
@@ -915,7 +930,7 @@ a {
 
 /* *_______________reviews_______________* */
 .reviews {
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .reviews_title {
@@ -1155,7 +1170,6 @@ a {
   width: 22px;
   height: 22px;
   color: #5E5E5E;
-  opacity: 0.2;
   pointer-events: none;
 }
 
@@ -1164,17 +1178,52 @@ a {
   border-radius: 6px;
   padding: 20px 20px 20px 70px;
   outline: none;
-  line-height: 1.7;
+  line-height: 1;
   width: 285px;
   background: none;
+  color: var(--color-white);
+  font-size: 17px;
 }
 
 .footer-form_wrap form input:hover, .footer-form_wrap form input:active, .footer-form_wrap form input:focus {
   border: 1px solid #21A038;
 }
 
-.footer-form_wrap form input:hover .footer-form-wrap_item svg {
-  color: var(--color-green);
-  opacity: 100%;
+.footer-form-wrap_item:first-of-type input {
+  padding: 20px 20px 20px 58px;
+
+}
+
+
+.footer-form_title {
+  position: relative;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 133px;
+  margin-bottom: 50px;
+  color: var(--color-white);
+}
+
+.footer-form_title::before {
+  content: "";
+  position: absolute;
+  width: 1168px;
+  opacity: 50%;
+  height: 1px;
+  background-color: #ffffff; /* или другой нужный цвет */
+  top: -67px;
+  left: 50%;
+  transform: translateX(-50%); /* чтобы полоска была по центру */
+}
+
+.footer_down {
+  margin-top: 83px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 1.42;
+  font-size: 15px;
+  font-weight: 400;
 }
 

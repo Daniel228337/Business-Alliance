@@ -21,3 +21,24 @@
 .end {
     justify-content: end;
 }
+
+@media (max-width: 1539px) {
+    .header nav {
+        margin-right: 50px;
+        margin-left: 70px;
+    }
+
+    .header_btn {
+        right: -47px;
+    }
+
+    .header nav {
+        gap: 25px;
+    }
+
+    .header_logo {
+        left: -45px;
+    }
+}
+
+
